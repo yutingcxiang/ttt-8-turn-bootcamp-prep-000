@@ -5,4 +5,11 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
-turn(board)
+turn(board) 
+
+user_index = gets.strip
+  
+  index = input_to_index(user_index)
+  
+  move(board, index, "X")
+  
